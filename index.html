@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create simple CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-wrapper">
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" class="form-control" name="name" placeholder="Nguyễn Văn C" >
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input type="text" class="form-control" name="address" placeholder="TP.HCM"  >
+            </div>
+            <div class="form-group">
+                <label for="phone">Điện thoại</label>
+                <input type="number" class="form-control" name="phone" placeholder="0900000000" >
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="your-email@gmail.com" >
+            </div>
+            <div class="form-group">
+                <label for="job">Nghề nghiệp</label>
+                <input type="text" class="form-control" name="job" placeholder="Designer" >
+            </div>
+            <div class="form-group">
+                <label for="image">Ảnh đại diện</label>
+                <input type="file" class="form-control" name="image">
+            </div>
+            <hr>
+            <div class="form-group">
+                <h1>Kĩ năng</h1>
+            </div>
+            <div class="input-skill">
+            </div>
+
+            <div class="form-group">
+                <a href="#" class="add-skill">Thêm kĩ năng</a>
+            </div>
+            <button type="submit" class="btnSubmit">Submit</button>
+        </form>
+    </div>
+
+    
+    <div class="modal">
+        <div class="modal-content">
+            <i class="fa fa-times modal-close"></i>
+            <div class="modal-desc">
+                <div class="avatar">
+                    <img src="" alt="" id="myimage" width="50%">
+                </div>
+                <div class="info">
+                    <h1 class="info-item" id="info-item name">Nguyễn Thanh Dũng</h3>
+                    <p class="info-item"></p>
+                    <p class="info-item"></p>
+                    <p class="info-item"></p>
+                    <p class="info-item"></p>
+                    <hr class="line"/>
+                    <h3 class="info-item font-weight-bold"><i class="fa fa-user-secret"></i>Kỹ năng</h3>
+                    <div class="skill-list"></div>
+                </div>
+                
+            </div>
+            <div class="modal-action">
+            <button class="modal-submit">Confirm</button>
+            <button class="modal-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
